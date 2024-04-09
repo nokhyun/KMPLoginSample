@@ -12,7 +12,7 @@ expect class Platform {
     val name: String
 }
 
-fun appModule() = listOf(platformModule)
+fun appModule() = listOf(platformModule, authModule, utilModule)
 
 fun initKoin(){
     startKoin {

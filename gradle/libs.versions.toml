@@ -20,6 +20,8 @@ kotlin = "1.9.23"
 
 # third-party
 koin = "3.5.4"
+koin-compose = "1.1.2"
+napier = "2.7.1"
 
 [libraries]
 googleid = { module = "com.google.android.libraries.identity.googleid:googleid", version.ref = "googleid" }
@@ -41,6 +43,8 @@ compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview"
 # third-party
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin"}
+koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin-compose"}
+napier = { module = "io.github.aakira:napier", version.ref = "napier" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
