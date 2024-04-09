@@ -13,4 +13,6 @@ This is a Kotlin Multiplatform project targeting Android, iOS.
 
 Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
 ----- 
+reference: https://proandroiddev.com/integrating-google-sign-in-into-kotlin-multiplatform-8381c189a891
+-----
 ing...
