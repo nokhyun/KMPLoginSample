@@ -9,6 +9,7 @@ import androidx.credentials.CredentialManager
 import com.google.android.libraries.identity.googleid.GetGoogleIdOption
 import com.google.android.libraries.identity.googleid.GoogleIdTokenCredential
 import com.google.android.libraries.identity.googleid.GoogleIdTokenParsingException
+import io.github.aakira.napier.Napier
 import login.google.GoogleAuthCredentials
 import login.google.GoogleAuthUiProvider
 
@@ -28,6 +29,8 @@ internal class GoogleAuthUiProviderImpl(
         } catch (e: GetCredentialException){
             null
         } catch (e: NullPointerException){
+            null
+        } catch (e: Exception) {
             null
         }
     }
