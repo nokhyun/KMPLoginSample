@@ -1,12 +1,14 @@
 import SwiftUI
 import ComposeApp
-import KakaoSDKCommon
+//import KakaoSDKCommon
+//import GoogleSignIn
 
 @main
 struct iOSApp: App {
+
    init() {
        // Kakao SDK 초기화
-       KakaoSDK.initSDK(appKey: "NATIVE_APP_KEY")
+//       KakaoSDK.initSDK(appKey: "NATIVE_APP_KEY")
        // Koin
        KoinHelperKt.doInitKoin()
        // LOG
@@ -14,7 +16,9 @@ struct iOSApp: App {
     }
 	var body: some Scene {
 		WindowGroup {
-			ContentView()
+            ContentView().onOpenURL(perform: { url in
+                GIDSignIn.sharedInstance.handle(url)
+            })
 		}
 	}
 }

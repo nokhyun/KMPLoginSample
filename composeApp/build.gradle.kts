@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsCompose)
+    kotlin("native.cocoapods") version "1.9.23"
 }
 
 kotlin {
@@ -23,7 +24,19 @@ kotlin {
             isStatic = true
         }
     }
-    
+
+    cocoapods {
+        ios.deploymentTarget = "13.5"
+
+        version = "1.0.0"
+        summary = "CocoaPods library"
+        homepage = "https://github.com/nokhyun/KMPLoginSample"
+
+        pod("GoogleSignIn"){
+            version = "7.1.0"
+        }
+    }
+
     sourceSets {
         androidMain.dependencies {
             implementation(libs.compose.ui.tooling.preview)
