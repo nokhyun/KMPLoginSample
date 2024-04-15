@@ -1,7 +1,6 @@
 import SwiftUI
 import ComposeApp
 //import KakaoSDKCommon
-//import GoogleSignIn
 
 @main
 struct iOSApp: App {
@@ -16,9 +15,7 @@ struct iOSApp: App {
     }
 	var body: some Scene {
 		WindowGroup {
-            ContentView().onOpenURL(perform: { url in
-//                GIDSignIn.sharedInstance.handle(url)
-            })
+            ContentView()
 		}
 	}
 }

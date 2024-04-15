@@ -56,7 +56,7 @@ internal class GoogleAuthUiProviderImpl(
     
     private fun getCredentialRequest(): GetCredentialRequest {
         return GetCredentialRequest.Builder()
-            .addCredentialOption(getGoogleIdOption(serverId = credentials.serverId))
+            .addCredentialOption(getGoogleIdOption(serverId = credentials.clientKey))
             .build()
     }
     

@@ -1,0 +1,42 @@
+PODS:
+  - AppAuth (1.7.4):
+    - AppAuth/Core (= 1.7.4)
+    - AppAuth/ExternalUserAgent (= 1.7.4)
+  - AppAuth/Core (1.7.4)
+  - AppAuth/ExternalUserAgent (1.7.4):
+    - AppAuth/Core
+  - composeApp (1.0.0):
+    - GoogleSignIn (= 7.1.0)
+  - GoogleSignIn (7.1.0):
+    - AppAuth (< 2.0, >= 1.7.3)
+    - GTMAppAuth (< 5.0, >= 4.1.1)
+    - GTMSessionFetcher/Core (~> 3.3)
+  - GTMAppAuth (4.1.1):
+    - AppAuth/Core (~> 1.7)
+    - GTMSessionFetcher/Core (< 4.0, >= 3.3)
+  - GTMSessionFetcher/Core (3.3.2)
+
+DEPENDENCIES:
+  - composeApp (from `../composeApp`)
+
+SPEC REPOS:
+  trunk:
+    - AppAuth
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
+
+EXTERNAL SOURCES:
+  composeApp:
+    :path: "../composeApp"
+
+SPEC CHECKSUMS:
+  AppAuth: 182c5b88630569df5acb672720534756c29b3358
+  composeApp: 9514a0557433573f008d74ec091b839ef63c5bea
+  GoogleSignIn: d4281ab6cf21542b1cfaff85c191f230b399d2db
+  GTMAppAuth: f69bd07d68cd3b766125f7e072c45d7340dea0de
+  GTMSessionFetcher: 0e876eea9782ec6462e91ab872711c357322c94f
+
+PODFILE CHECKSUM: a13fb32c796c9bf877dedb40a2a943b99de9c10f
+
+COCOAPODS: 1.15.2

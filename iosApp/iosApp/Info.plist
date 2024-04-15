@@ -47,16 +47,16 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>GIDServerClientID</key>
-	<string></string>
+	<string>WEB_CLIENT_KEY</string>
 
 	<key>GIDClientID</key>
-	<string></string>
+	<string>IOS_CLIENT_KEY</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 	  <dict>
 	    <key>CFBundleURLSchemes</key>
 	    <array>
-	      <string></string>
+	      <string>SCHEME_IOS_CLIENT_KEY</string>
 	    </array>
 	  </dict>
 	</array>

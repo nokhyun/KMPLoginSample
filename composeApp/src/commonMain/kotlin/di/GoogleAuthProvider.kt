@@ -12,6 +12,6 @@ internal expect val googleAuthModule: Module
 
 val utilModule = module {
     factory {
-        GoogleAuthCredentials("KEY")
+        GoogleAuthCredentials("CLIENT_KEY")
     }
 }

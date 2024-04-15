@@ -44,22 +44,18 @@ fun App() {
                 }
             }
 
-            when (platformName()) {
-                "Android" -> {
-                    GoogleButtonUiContainer(
-                        onGoogleSignInResult = {
-                            Napier.e("result: ${it?.displayName}")
-                        }
-                    ) {
-                        Button(
-                            onClick = { this.onClick() }
-                        ) {
-                            Text("Google")
-                        }
-                    }
-                }
+            GoogleButtonUiContainer(
+                onGoogleSignInResult = { googleUser ->
+                    if(googleUser == null) return@GoogleButtonUiContainer
 
-                else -> {}
+                    Napier.e("result: $googleUser")
+                }
+            ) {
+                Button(
+                    onClick = { this.onClick() }
+                ) {
+                    Text("Google")
+                }
             }
         }
     }
@@ -84,6 +80,8 @@ fun GoogleButtonUiContainer(
                 coroutineScope.launch {
                     val googleUser = googleAuthUiProvider.signIn()
                     onGoogleSignInResult(googleUser)
+
+//                    googleAuthProvider.signOut()
                 }
             }
         }
