@@ -19,3 +19,5 @@ Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-mu
 </p>
 [IOS]: 완료
 
+<h5># [Android: ./di/GoogleAuthProvider/utilModule => service key</h5>
+<h5># [IOS]: info.plist => service key</h5>
